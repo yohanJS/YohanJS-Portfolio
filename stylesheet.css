@@ -1,0 +1,270 @@
+:root {
+    --primary-color: #6f2fa3;
+    --secondary-color: #1aa0e3;
+    --blue-bg-color: #011364;
+    --light-color: #5e5f64;
+    --dark-color: #121212;
+    --white-color: #eee;
+    --black-color: #111;
+    --emerald-green: #50C878;
+    --dark-charc: #36454F;
+    --red-cherry: #D2042D;
+    --yellow-amber: #FFBF00;
+    --tomato: #FF6347;
+}
+* {
+    box-sizing: content-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.landing-bg {
+    background-image: url(./img/landing-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blue-bg-color {
+    background-color: var(--blue-bg-color);
+}
+/* nav styles */
+.my-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.icon-container {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 5px;
+background-color: #333;
+margin: 6px 0;
+transition: 0.4s;
+}
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px);
+transform: rotate(45deg) translate(-8px, -8px);
+}
+.nav__link {
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 120px;
+    background-color: #000000;
+}
+.nav__link a {
+    margin-top: 80px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    font-size: small;
+}
+.nav__link a:hover {
+    color: var(--secondary-color) !important;
+    font-weight: bold;
+}
+.box {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+.box:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+}
+.hide {
+display: none;
+}
+.pj-bg {
+    background-image: url(./img/projects-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*BLACKDROP-FILTER*/
+.box-blur {
+    background-color: rgba(67, 67, 68, 0.3);
+    border-radius: 5px;
+   -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px) saturate(150%);
+    width: 100%;
+    height: 20%;
+    margin-top: 10px;
+}
+.box-blur-2 {
+    background-color: rgba(47, 48, 53, 0.3);
+    border-radius: 5px;
+   -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(16px) saturate(150%);
+    margin-top: 10px;
+    width: 100%;
+}
+ /*Call-Text-Section*/
+ .call-text-email-buttons {
+    margin: 10px 5px;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+/*Call-Text-Section*/
+.github-container, .linkedin-container, .email-container, .tel-container, .sms-container {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+   -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(16px) saturate(150%);
+    border: none;
+    font-size: 1em;
+}
+/*Call-Text-Section*/
+.tel, .sms, .email, .github, .linkedin {
+    text-decoration: none;
+    color: var(--black-color);
+}
+.tel:hover, .sms:hover, .email:hover, .github:hover, .linkedin:hover {
+    color: var(--black-color);
+}
+.white-color {
+    color: var(--white-color);
+}
+.gr-color {
+    background-color: var(--dark-color);
+}
+.devName {
+    height: 70px;
+    margin-top: 15px;
+}
+.big-txt {
+    font-size: 10.5vw;
+}
+.medium-txt {
+    font-size: 1.1rem;
+}
+ul li {
+    list-style-type: none;
+}
+.my-btn {
+    border-radius: 20px;
+    border: 1px solid var(--secondary-color);
+    background: none;
+    padding: 5px 20px;
+}
+.my-btn:hover {
+    background-color: var(--secondary-color);
+}
+.title-animation {
+    transition-property:color;
+    transition: all 0.5s ease-in-out;
+}
+.title-animation:hover {
+    color: var(--secondary-color);
+}
+.my-bg-dark {
+    background-color: #000000;
+}
+.dark-bg {
+    background-color: var(--dark-color);
+}
+.bg {
+    background-color: var(--secondary-color);
+}
+.bg-sec {
+    background-color: var(--secondary-color);
+}
+/*Project Animation*/
+#hover-proj-1, #hover-proj-2, #hover-proj-3 {
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#hover-proj-1:hover, #hover-proj-2:hover, #hover-proj-3:hover {
+    background-color: var(--secondary-color);
+}
+/*Coding Challenges Animation*/
+#cod-1, #cod-2, #cod-3, #cod-4, #cod-5, #cod-6, #cod-7, #cod-8, #cod-9, #cod-10 {
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#cod-1:hover, #cod-2:hover, #cod-3:hover, #cod-4:hover, #cod-5:hover, #cod-6:hover, #cod-7:hover, #cod-8:hover, #cod-9:hover, #cod-10:hover {
+    background-color: var(--secondary-color);
+}
+.mk-border {
+    border: 5px solid var(--primary-color);
+    border-radius: 5px;
+}
+.main-color {
+    color: var(--primary-color);
+}
+.secondary-color {
+    color: var(--secondary-color);
+}
+@media only screen and (min-width: 768px) {
+    .nav__link a {
+        margin-top: 10px;
+        padding: 0;
+    }
+    .icon-container {
+        display: none;
+    }
+    .nav__link {
+        margin: auto;
+        margin-right: 50px;
+        display: block;
+        position: static;
+        background: none;
+    }
+}
+@media only screen and (min-width: 935px) {
+    .icon-container {
+        display: none;
+    }
+    .hamburger {
+      display: none;
+    }
+    .tel, .sms {
+        display: none;
+    }
+    .tel-container, .sms-container {
+        display: none;
+    }
+    .box-blur-2 {
+        width: 75%;
+        margin: auto;
+    }
+    .big-txt {
+        font-size: 5vw;
+    }
+    .medium-txt {
+        font-size: 1.3rem;
+    }
+}
