@@ -20,7 +20,7 @@ const addName = () => {
 }
 const addOccupation = (str) => {
     let arrName = [];
-    let occupation = ["a", " ", "D", "e", "v", "e", "l", "o", "p", "e", "r"];
+    let occupation = ["a", " ", "F", "u", "l", "l", " ", "S", "t", "a", "c", "k"," ", "D", "e", "v", "e", "l", "o", "p", "e", "r"];
 
     //gets the devName
     for(let i = 0; i < str.length; i++) {
