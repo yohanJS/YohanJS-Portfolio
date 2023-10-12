@@ -82,9 +82,6 @@ window.onload = ()=> {
     $("movie-pro").onclick = () => {
         window.alert("Sorry!\nProject section is not ready...\nCheck coding challeneges")    
     }
-    $("bug-tracker").onclick = () => {
-        window.alert("Sorry!\nProject section is not ready...\nCheck coding challeneges")    
-    }
 }
 window.onscroll = () => {
     if(window.pageYOffset > 5) {
