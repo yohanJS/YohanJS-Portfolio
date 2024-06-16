@@ -20,7 +20,7 @@ const addName = () => {
 }
 const addOccupation = (str) => {
     let arrName = [];
-    let occupation = ["a", " ", "F", "u", "l", "l", " ", "S", "t", "a", "c", "k"," ", "D", "e", "v", "e", "l", "o", "p", "e", "r"];
+    let occupation = ["a", " ", "S", "o", "f", "t", "w", "a", "r", "e", " ", "E","n", "g", "i", "n", "e", "e", "r"];
 
     //gets the devName
     for(let i = 0; i < str.length; i++) {
@@ -75,13 +75,6 @@ window.onload = ()=> {
     }, 9000);
 
     clearInterval(interval);
-
-    $("blog").onclick = () => {
-        window.alert("Sorry!\nProject section is not ready...\nCheck coding challeneges")    
-    }
-    $("movie-pro").onclick = () => {
-        window.alert("Sorry!\nProject section is not ready...\nCheck coding challeneges")    
-    }
 }
 window.onscroll = () => {
     if(window.pageYOffset > 5) {
